@@ -20,6 +20,11 @@ public class stepDefinitions {
         System.out.println("User enters username and password");
     }
 
+    @When("^User login into application with username \"([^\"]*)\" and password \"([^\"]*)\"$")
+    public void user_login_into_application_with_username_something_and_password_something(String strArg1, String strArg2) throws Throwable {
+        System.out.println("My Username is: " + strArg1 + " And Password is: " + strArg2);
+    }
+    
     @Then("^Browse all blogs$")
     public void browse_all_blogs() throws Throwable {
         System.out.println("User browses all blogs");
