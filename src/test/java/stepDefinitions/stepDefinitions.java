@@ -30,9 +30,9 @@ public class stepDefinitions {
         System.out.println("User browses all blogs");
     }
 
-    @And("^Blogs are displayed$")
-    public void blogs_are_displayed() throws Throwable {
-        System.out.println("All blogs are displayed");
+    @And("^Blogs displayed are \"([^\"]*)\"$")
+    public void blogs_displayed_are(String arg1) throws Throwable {
+    	System.out.println("Blogs displayes are " + arg1);
     }
 
 }
